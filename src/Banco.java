@@ -7,16 +7,16 @@ public class Banco {
     String nome;
     String agencia;
     String endereco;
-    String numero;
+
     ArrayList<Conta> contas = new ArrayList<Conta>();
-    ArrayList<Pessoa> pessoas = new ArrayList<>();
 
 
-    public Banco(String nome, String agencia, String endereco, String numero) {
+
+    public Banco(String nome, String agencia, String endereco) {
         this.nome = nome;
         this.agencia = agencia;
         this.endereco = endereco;
-        this.numero = numero;
+
 
 
     }
@@ -45,13 +45,6 @@ public class Banco {
         this.endereco = endereco;
     }
 
-    public String getNumero() {
-        return numero;
-    }
-
-    public void setNumero(String numero) {
-        this.numero = numero;
-    }
 
     public ArrayList<Conta> getContas() {
         return contas;
@@ -61,16 +54,16 @@ public class Banco {
         this.contas = contas;
     }
 
-    public ArrayList<Pessoa> getPessoas() {
-        return pessoas;
-    }
-
-    public void setPessoas(ArrayList<Pessoa> pessoas) {
-        this.pessoas = pessoas;
-    }
 
     public void addConta(Conta conta) {
         this.contas.add(conta);
+        System.out.println("Conta: " + conta.getNumero() + " adicionada com sucesso");
+    }
+
+    public void detalharBanco(){
+
+        // detalhar as contas existente, quantidade, nome banco, numero agencia
+
     }
 
 

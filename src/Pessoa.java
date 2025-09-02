@@ -1,9 +1,12 @@
+import java.util.ArrayList;
+
 public class Pessoa {
     private String nome;
     private int idade;
     private String sexo;
     private String cpf;
     private String endereco;
+    private ArrayList<Conta> contas = new ArrayList<>();
 
     public Pessoa(String nome, int idade, String sexo, String cpf, String endereco) {
         this.nome = nome;
